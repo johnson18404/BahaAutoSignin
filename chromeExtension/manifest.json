@@ -1,0 +1,27 @@
+{
+  "name": "BahaAutoSingin",
+  "description": "",
+  "version": "0.1",
+  "permissions": [
+    "activeTab", "tabs", "storage", "alarms", "cookies", "https://www.gamer.com.tw/"
+  ],
+  "background": {
+    "scripts": ["static/jquery.min.js", "background.js"],
+    "pages": ["background.html"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_title": "BahaAutoSingin"
+  },
+  "manifest_version": 2
+//   "icons": { "16": "icons/16.png",
+//              "48": "icons/48.png",
+//              "128": "icons/128.png" },
+//   "content_scripts": [
+// 	{
+//       "matches": ["http://forum.gamer.com.tw/B.php*", "https://forum.gamer.com.tw/B.php*", "https://forum.gamer.com.tw/B_card.php*"],
+// 	    "css": ["lib/bootstrap.min.css"],
+//       "js": ["lib/jquery-2.1.4.min.js", "bfp.js"]
+//     }
+//   ]
+}

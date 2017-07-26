@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="static/w3.css">
+<style>
+.Site-content {
+	margin-left: 20%;
+    width: 80%;
+}
+</style>
+<body>
+<div ng-app="myApp" ng-controller="myCtrl">
+<div class="Site-content">
+    <div class="w3-container">
+        <h1>BahaAutoSignin</h1>
+        <p>BahaAutoSign是一個全自動巴哈每日簽到程式。</p>
+        <p>你只要有在巴哈首頁(https://www.gamer.com.tw/)登入過，接下來一切簽到就交給我們了。</p>
+        <p>更多詳細資訊: <a target="_blank" href="https://github.com/johnson18404/BahaAutoSignin">https://github.com/johnson18404/BahaAutoSignin</a></p>
+        <br>
+        <label>目前巴哈登入帳號：</label>
+        <input class="w3-input w3-border w3-round-large w3-small" type="text" style="width:35%;" ng-model="txtBahaId" readonly>
+        <br>
+        <label>操作記錄：</label>
+        <ul class="w3-ul w3-hoverable" style="width: 60%;">
+            <li ng-repeat="x in list">{{x.date}}&nbsp;&nbsp;&nbsp;&nbsp;{{x.msg}}</li>
+        </ul>
+    </div>
+</div>
+</div>
+    <script src="static/angular.min.js"></script>
+    <script src="option.js"></script>
+</body>
+</html> 
