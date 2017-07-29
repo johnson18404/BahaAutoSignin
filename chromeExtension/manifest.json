@@ -1,27 +1,20 @@
 {
-  "name": "BahaAutoSingin",
-  "description": "",
+  "name": "BahaAutoSingin - 全自動巴哈簽到程式",
+  "description": "只要有在巴哈網站登入過，就可以一切全自動簽到。不需要做任何額外設定，也不會有窗跳出來干擾。",
   "version": "0.1",
   "permissions": [
     "activeTab", "tabs", "storage", "alarms", "cookies", "https://www.gamer.com.tw/"
   ],
   "background": {
     "scripts": ["static/jquery.min.js", "background.js"],
-    "pages": ["background.html"],
     "persistent": false
   },
   "browser_action": {
     "default_title": "BahaAutoSingin"
   },
-  "manifest_version": 2
-//   "icons": { "16": "icons/16.png",
-//              "48": "icons/48.png",
-//              "128": "icons/128.png" },
-//   "content_scripts": [
-// 	{
-//       "matches": ["http://forum.gamer.com.tw/B.php*", "https://forum.gamer.com.tw/B.php*", "https://forum.gamer.com.tw/B_card.php*"],
-// 	    "css": ["lib/bootstrap.min.css"],
-//       "js": ["lib/jquery-2.1.4.min.js", "bfp.js"]
-//     }
-//   ]
+  "manifest_version": 2,
+  "icons": { "16": "icons/bas16.png",
+             "48": "icons/bas48.png",
+             "128": "icons/bas128.png" 
+  }
 }
